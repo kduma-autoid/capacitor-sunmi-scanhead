@@ -51,6 +51,8 @@ public class ScannerService {
     public static final int SM_SS_1103 = 118;
     public static final int SM_SS_1101 = 119;
     public static final int HONEYWELL_5703 = 120;
+    public static final int SM_SS_1100_2 = 121;
+    public static final int SM_SS_1104 = 122;
 
     public static String scannerIdToName(int id) {
         return switch (id) {
@@ -76,6 +78,8 @@ public class ScannerService {
             case ScannerService.SM_SS_1103 -> "SM_SS_1103";
             case ScannerService.SM_SS_1101 -> "SM_SS_1101";
             case ScannerService.HONEYWELL_5703 -> "HONEYWELL_5703";
+            case ScannerService.SM_SS_1100_2 -> "SM_SS_1100_2";
+            case ScannerService.SM_SS_1104 -> "SM_SS_1104";
 
             default -> "UNKNOWN";
         };
