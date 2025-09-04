@@ -2,6 +2,8 @@
 
 Sunmi Scan Head bindings for Capacitor
 
+Check full documentation here: [opensource.duma.sh/libraries/capacitor/sunmi-scanhead](https://opensource.duma.sh/libraries/capacitor/sunmi-scanhead)
+
 ## Install
 
 ```bash
