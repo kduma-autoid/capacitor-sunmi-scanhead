@@ -1,11 +1,13 @@
 package dev.duma.android.sunmi.scanbroadcastreceiver;
 
-import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.util.Base64;
+
+import androidx.core.content.ContextCompat;
+
 import java.util.Objects;
 
 public class ScanHeadBroadcastReceiver implements IScanHeadBroadcastReceiver {
@@ -52,14 +54,13 @@ public class ScanHeadBroadcastReceiver implements IScanHeadBroadcastReceiver {
     }
 
     @Override
-    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     public void register() {
         IntentFilter filter = new IntentFilter();
         filter.addAction("com.sunmi.scanner.ACTION_DATA_CODE_RECEIVED");
         filter.addAction("com.sunmi.scanner.ACTION_SCAN_END");
         filter.addAction("com.sunmi.scanner.ACTION_SCAN_START");
 
-        context.registerReceiver(receiver, filter);
+        ContextCompat.registerReceiver(context, receiver, filter, ContextCompat.RECEIVER_EXPORTED);
     }
 
     @Override
