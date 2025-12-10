@@ -20,8 +20,11 @@ import kotlin.text.Typography;
 public class SunmiHelper {
     public static final String QUERY_HW_SN = "scan0001001"; //? com.sunmi.scanner.entity.Result
     public static final String SCAN00000109 = "scan00000109"; //? com.sunmi.scanner.entity.Result <scan00000109=-1> ScanImageFile
-    public static final String SCAN00000105 = "scan00000105"; //? com.sunmi.scanner.entity.Result <scan00000105=-1> ocrPic
+    public static final String SCAN00000105 = "scan00000105"; //? com.sunmi.scanner.entity.Result <scan00000105=-1> ocrPic SET_SCAN_OCR_FETCHING
     public static final String QUERY_EXPOSURE = "scan00000106"; // getExpAuto
+    public static final String SCAN_MODE_OCR = "scan9002000"; // Scan Mode OCR
+    public static final String SCAN_MODE_BARCODE = "scan9003000"; // Scan Mode Barcode
+    public static final String SCAN_MODE_IMAGE_CONTROL = "scan00000105"; // Scan Mode Image Control SET_SCAN_OCR_FETCHING
     public static final String AIM_128 = "scan0035";
     public static final String AUSTRALIN_POSTAL = "scan2001";
     public static final String AZTEC = "scan1003";
